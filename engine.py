@@ -3,6 +3,7 @@ from recsys.algorithm.factorize import SVD
 import os.path
 
 DATASET = '/tmp/movielens.zip'
+RATINGS = './ml-1m/ratings.dat'
 
 class Engine:
     def __init__(self, svd, *args, **kwargs):
@@ -30,7 +31,7 @@ def load_data():
         svd = SVD(filename=DATASET)
     else:
         svd = SVD()
-        svd.load_data(filename='./ml-1m/ratings.dat', sep='::', format={'col':0, 'row':1, 'value':2, 'ids': int})
+        svd.load_data(filename=RATINGS, sep='::', format={'col':0, 'row':1, 'value':2, 'ids': int})
         k = 100
         svd.compute(k=k,
                     min_values=10,
