@@ -1,7 +1,7 @@
 # Engine de Recomendação
 
 ## Instalação
-Essa engine de recomendação utiliza implementações presentes no projeto [python-recsys](https://github.com/ocelma/python-recsys). Instruções de instalação também estão presentes no link
+Essa engine de recomendação utiliza implementações presentes no projeto [python-recsys](https://github.com/ocelma/python-recsys). Instruções de instalação também estão presentes no link.
 
 ## Dataset
 O dataset utilizado nesse projeto representa dados de avaliação de usuários sobre filmes que contém informações como: título, gêneros e data de avaliação.
